@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/bt_messagecode_netcheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="发送验证码"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_code_netcheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""/>
+
+                <Button
+                    android:id="@+id/bt_code_netcheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="发送验证码"/>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/bt_realnamepre_netcheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="实名制预检验"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_realname_netcheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""/>
+
+                <Button
+                    android:id="@+id/bt_realname_netcheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="实名制"/>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/bt_userinfo_netcheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="用户信息"/>
+
+            <Button
+                android:id="@+id/bt_usergradeinfo_netcheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="用户等级信息"/>
+
+            <Button
+                android:id="@+id/bt_usersignatrue_netcheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="用户签到"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_follower_netcheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""/>
+
+                <Button
+                    android:id="@+id/bt_follower_netcheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="关注"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_followerdelete_netcheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""/>
+
+                <Button
+                    android:id="@+id/bt_followerdelete_netcheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="取消关注"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_userfans_netcheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="粉丝列表"/>
+
+            <Button
+                android:id="@+id/bt_userfollowers_netcheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="关注列表"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_blacklist_netcheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""/>
+
+                <Button
+                    android:id="@+id/bt_blacklistadd_netcheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="加入黑名单"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_blacklistdelete_netcheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""/>
+
+                <Button
+                    android:id="@+id/bt_blacklistdelete_netcheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="移除黑名单"/>
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/bt_blacklist_netcheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="黑名单列表"/>
+
+
+
+            <Button
+                android:id="@+id/bt_recuser_netcheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="获取推荐用户"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_tipoffs_netcheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""/>
+
+                <Button
+                    android:id="@+id/bt_tipoffs_netcheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="举报用户"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_userpicture_netcheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="上传图片"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

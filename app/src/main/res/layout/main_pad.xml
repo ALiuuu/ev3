@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="#27A5F9"
+        android:elevation="10dp">
+
+
+        <TextView
+            android:id="@+id/tv_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="150dp"
+            android:layout_marginLeft="20dp"
+            android:text="16°"
+            android:textColor="#fff"
+            android:textSize="80sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="90dp"
+            android:layout_marginLeft="20dp"
+            android:text="Ningbo"
+            android:textColor="#fff"
+
+            android:textSize="30sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_location"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:text="22/33"
+            android:textColor="#fff"
+            android:textSize="25sp"/>
+
+
+        <ImageView
+            android:id="@+id/iv_weather"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="    可能有降雨，请携带雨具，建议穿长袖衬衫单裤等服装"
+            android:textColor="#fff"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_man"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_toRightOf="@id/rl_head">
+
+
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/shape_head_back">
+
+            <ImageView
+                android:id="@+id/iv_manhead_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dad"/>
+
+            <View
+                android:id="@+id/v_manhead_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_head_fade"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/shape_head_back">
+
+            <ImageView
+                android:id="@+id/iv_manhead_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/mom"/>
+
+            <View
+                android:id="@+id/v_manhead_2"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_head_fade"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="140dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape_head_back">
+
+            <ImageView
+                android:id="@+id/iv_manhead_3"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/son"/>
+
+            <View
+                android:id="@+id/v_manhead_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_head_fade"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="140dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_head_back">
+
+            <ImageView
+                android:id="@+id/iv_manhead_4"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dauthger"/>
+
+            <View
+                android:id="@+id/v_manhead_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_head_fade"/>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/rl_man"
+        android:background="@drawable/shape_bg"
+        android:elevation="5dp"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_clothes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="3"
+            android:elevation="10dp"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_pants"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="3"
+            android:elevation="10dp"/>
+
+        <android.support.v4.view.ViewPager
+
+            android:id="@+id/vp_shoes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:elevation="10dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/bt1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_head_back"
+                android:src="@drawable/add"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="添加衣服"/>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/bt2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_head_back"
+                android:src="@drawable/add"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="添加裤子"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/bt3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_head_back"
+                android:src="@drawable/add"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="添加鞋子"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

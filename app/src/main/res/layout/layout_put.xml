@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#eeeeee">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#27A5F9"
+        android:elevation="10dp">
+
+
+        <TextView
+            android:id="@+id/tv_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="添加物品"
+            android:textColor="#fff"
+            android:textSize="40sp"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_opencamera"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#43D17C"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="点击拍照添加"
+        android:textColor="#fff"
+        android:textSize="20sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_opencamera"
+        android:layout_below="@id/rl_head"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_scan"
+        android:text="扫码"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <Button
+        android:id="@+id/bt_scan2"
+        android:text="入口扫码"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <Button
+        android:id="@+id/bt_notify"
+        android:text="通知"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+
+    <Button
+        android:id="@+id/bt_map"
+        android:text="地图"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <Button
+        android:id="@+id/bt_slide"
+        android:text="slide"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <Button
+        android:id="@+id/dianti"
+        android:text="连接ev3"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+</LinearLayout>
