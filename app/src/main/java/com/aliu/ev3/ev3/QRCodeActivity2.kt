@@ -30,7 +30,7 @@ class QRCodeActivity2 : CaptureActivity() {
     var number: TextView? = null
     var index = 0
     override fun getLayoutId(): Int {
-        return R.layout.activity_qrcode2
+        return R.layout.activity_qrcode3
     }
 
     override fun initUI() {
@@ -98,7 +98,7 @@ class QRCodeActivity2 : CaptureActivity() {
             number?.visibility = View.INVISIBLE
             cameraScan.setAnalyzeImage(true)
 
-        }, 2000)
+        }, 1000)
         return true
     }
 }

@@ -45,25 +45,35 @@ class MapActivity : AppCompatActivity() {
         //在activity执行onResume时执行mMapView.onResume ()，重新绘制加载地图
         mMapView?.onResume()
         aMap!!.clear()
+//        aMap!!.addMarker(
+//            MarkerOptions().position(test(29.830059, 121.530266 ))
+//                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED))
+//        )
+//        aMap!!.addMarker(
+//            MarkerOptions().position(test(29.82332, 121.530764))
+//                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED))
+//        )
+//        aMap!!.addMarker(
+//            MarkerOptions().position(test(29.820136, 121.527068))
+//                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED))
+//        )
+//        aMap!!.addMarker(
+//            MarkerOptions().position(test(29.82184, 121.52327))
+//                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED))
+//        )
+
         aMap!!.addMarker(
-            MarkerOptions().position(test(29.830059, 121.530266 ))
+            MarkerOptions().position(test(28.932129, 118.781683))
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED))
         )
         aMap!!.addMarker(
-            MarkerOptions().position(test(29.82332, 121.530764))
+            MarkerOptions().position(test(28.928992, 118.778763))
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED))
         )
-        aMap!!.addMarker(
-            MarkerOptions().position(test(29.820136, 121.527068))
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED))
-        )
-        aMap!!.addMarker(
-            MarkerOptions().position(test(29.82184, 121.52327))
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED))
-        )
+
         aMap!!.moveCamera(
             CameraUpdateFactory.newCameraPosition(
-                CameraPosition(test(29.815982,121.527856), 15f, 0f, 0f)
+                CameraPosition(test(28.933597, 118.784099), 15f, 0f, 0f)
             )
         )
     }

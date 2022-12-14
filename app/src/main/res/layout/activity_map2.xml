@@ -16,5 +16,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_width="match_parent"
         android:scaleType="fitCenter"
+        android:visibility="gone"
         android:layout_height="0dp"/>
+
+    <ImageView
+        android:src="@drawable/fake2"
+        app:layout_constraintDimensionRatio="h,1284:735"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:scaleType="fitCenter"
+        android:layout_height="0dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

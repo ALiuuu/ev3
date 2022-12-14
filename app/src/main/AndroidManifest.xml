@@ -85,12 +85,13 @@
 
         <activity
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:screenOrientation="landscape"
+            android:screenOrientation="sensorLandscape"
             android:name="com.example.myapplicationkkk.QRCodeActivity">
         </activity>
 
         <activity
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="sensorLandscape"
             android:name="com.example.myapplicationkkk.QRCodeActivity2">
         </activity>
         <activity
